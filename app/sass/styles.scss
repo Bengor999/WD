@@ -1,0 +1,450 @@
+:root {
+    --color-greyBlue: #34547A;
+}
+
+
+body {
+font-family: 'Roboto', Arial, sans-serif ;
+font-family: 'Revalia',Arial, sans-serif;
+
+}
+
+.base {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin:0 auto;
+    max-width: 1920px;
+    height: 100%;
+    width: 100%;
+}
+
+
+// first-screen
+
+
+.firstScreen {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 700px;
+    background-color: #eeeff1;
+}
+.firstScreenNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // justify-self: flex-start;
+    // align-self: flex-start;
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 0 0 0 ;
+    // background-color: lawngreen;
+}
+.firstScreenNavWD {
+    display: block;
+    // width: 96px;
+    // height: 60px;
+    font-family: 'Revalia';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--color-greyBlue);
+    // background-color: lightcoral;
+
+
+}
+.firstScreenNavMenu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    max-width: 620px;
+    width: 100%;
+    // background-color: lightgreen;
+}
+.firstScreenContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    // align-items: center;
+    // justify-self: flex-end;
+    // align-self: flex-end;
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 0 140px 0 ;
+    // background-color: rgb(150, 41, 101);
+
+}
+.firstScreenContentLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.firstScreenContentLeft img {
+    width: 370px;
+    height: 258px;
+}
+.firstScreenContentRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 540px;
+    width: 100%;
+    margin: 0 0 0 143px;
+}
+.firstScreenContentRight h1 {
+    font-size: 48px;
+    font-style: normal;
+    // align-self: flex-start;
+    font-weight: 500;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;
+    // background-color: forestgreen;
+    margin: 0 0 0 0;
+}
+.firstScreenContentRight main {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    // background-color:gold
+
+
+}
+.firstScreenContentRight button {
+    height: 65px;
+    width: 225px;
+    border-radius: 0px;
+    background-color: var(--color-greyBlue);
+    color:#fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+
+//about-me
+
+
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 366px;
+}
+.aboutMeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 540px;
+    width: 100%;
+    min-height: 166px;
+}
+.aboutMeContent h2 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.aboutMeContent p {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+
+// numbers
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 250px;
+    background-color: var(--color-greyBlue);
+}
+.numbersContent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    width: 100%;
+}
+.numbersContentAll {
+    display: flex;
+    // justify-content: space-between;
+    max-width: 180px;
+    width: 100%;
+    height: 55px;
+    // background-color: gold;
+}
+.numbersContentAll img{
+    width: 55px;
+    height: 55px;
+    // background-color: gray;
+    margin:  0 20px 0 0;
+}
+.numbersContentAll h3 {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    // background-color: green;
+    margin: 3px 0 0 0 ;
+}
+.numbersContentAll p {
+    font-size: 16px;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    // background-color: hotpink;
+    margin: 0 0 0 0 ;
+}
+
+
+//skills
+
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 653px;
+    // background-color: green;
+}
+.skillsContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    width: 100%;
+    min-height: 450px;
+    // background-color: rgb(93, 199, 79);
+}
+.skillsContent img {
+    height: 450px;
+    width: 555px;
+}
+.skillsContentLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1120px;
+    width: 100%;
+    min-height: 450px;
+    // background-color: blue;
+}
+.skillsContentLeft h2 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.skillsContentLeft p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.skillsContentLeft progress {
+    /* Отключаем стиль (как правило, не требуется, но на всякий случай)  */
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /* Убираем границы по умолчанию в Firefox и Opera */
+    border: none;
+    /* Чтобы фоновое изображение в Safari работало, как надо */
+    background-size: auto;
+}
+// Изменяем цвет фона элемента
+/* Firefox  */
+.skillsContentLeft progress {
+    background: #c4c4c4;
+    height: 4px;
+    width: 445px;
+    border-radius: 0;
+}
+/* Chrome */
+.skillsContentLeft progress::-webkit-progress-bar {
+    background: #c4c4c4;
+    height: 4px;
+    width: 445px;
+    border-radius: 0;
+}
+// Изменяем цвет значения элемента
+/* IE10 */
+.skillsContentLeft progress {
+    color: #34547A;
+    }
+    /* Firefox */
+.skillsContentLeft progress::-moz-progress-bar {
+    background: #34547A;
+    }
+    /* Chrome */
+.skillsContentLeft progress::-webkit-progress-value {
+    background: #34547A;
+    }
+
+
+// video
+
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 1004px;
+    background-color: #eeeff1;
+
+}
+.videoDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    width: 100%;
+    min-height: 804px;
+    // background-color: green;
+}
+.videoDescription h2 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0 0 0 0;
+    // background-color: rgb(53, 36, 146);
+}
+.videoDescription p {
+    max-width: 540px;
+    width: 100%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    // background-color: rgb(197, 171, 22);
+}
+.videoVideo {
+    position: relative;
+    // background-color: rgb(137, 167, 196);
+}
+.videoPlayButton {
+    height: 100px;
+    width: 100px;
+    border-radius: 0px;
+    color: #fff;
+    position: absolute;
+    background-color: rgba(216, 122, 15, 0%);
+    // overflow: auto;
+    margin: auto;
+    border: 0;
+    padding: 0;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+.videoPlayButton img {
+    height: 100px;
+    width: 100px;
+}
+
+
+//projecks
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 960px;
+    // background-color: #eeeff1;
+    margin: 0 0 0 0;
+}
+.projectsTop , .projectsbottom {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 0;
+    max-width: 1920px;
+    width: 100%;
+}
+.projectsTop img, .projectsbottom img {
+    width: 480px;
+    height: 480px;
+}
+
+
+//clients
+
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 292px;
+    // background-color: #d439a1;
+    margin: 0 0 0 0;
+
+}
+.clientsContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    width: 100%;
+    // background-color: #38c433;
+    margin: 0 0 0 0;
+
+}
+.clientsContent img {
+    width: 255px;
+    height: 120px;
+    margin: 0 0 0 0;
+
+}
