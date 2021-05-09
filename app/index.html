@@ -16,19 +16,19 @@
 		<header class="firstScreen">
 			<nav class="firstScreenNav">
 				<aside class="firstScreenNavWD">
-					<p class="WD">WD</p>
+					<img class="WD" src="images\dest\WD.png" alt="Логотип WD"/>
 				</aside>
 				<aside class="firstScreenNavMenu">
-					<a class="" >ГЛАВНАЯ</a>
-					<a class="" >ОБ АВТОРЕ</a>
-					<a class="" >РАБОТЫ</a>
-					<a class="" >ПРОЦЕСС</a>
-					<a class="" >КОНТАКТЫ</a>
+					<a href="" class="" >ГЛАВНАЯ</a>
+					<a href="" class="" >ОБ АВТОРЕ</a>
+					<a href="" class="" >РАБОТЫ</a>
+					<a href="" class="" >ПРОЦЕСС</a>
+					<a href="" class="" >КОНТАКТЫ</a>
 				</aside>
 			</nav>
 			<div class="firstScreenContent">
 				<div class="firstScreenContentLeft">
-					<img src="images\dest\Komp.jpg" alt="Монитор" />
+					<img src="images\dest\Komp.png" alt="Монитор" />
 				</div>
 				<section class="firstScreenContentRight">
 					<h1 class="">Дизайн и верстка</h1>
@@ -119,38 +119,81 @@
 			<section class="videoDescription">
 				<h2 class="">Как я работаю</h2>
 				<p class="">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-				<div class="videoVideo">
-					<video controls width="1110" height="600" poster="images/dest/videoFon.jpg">
-						<source src="video.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
-						<source src="video.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
-						<source src="video.ogv" type="video/ogg"><!-- Ogg/Vorbis для старых версий браузеров Firefox и Opera -->
-						<object data="video.swf" type="application/x-shockwave-flash"><!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
-						<param name="movie" value="video.swf">
-						</object>
-					</video>
+				<div class="wrapper">
+					<!-- begin Video Youtube
+					=========================================================================== -->
+					<div class="video-youtube video-youtube_overlay">
+					  <div id="video-youtube__content" class="video-youtube__content video-youtube__content_hide-origin-play-btn"></div>
+					  <button type="button" class="video-youtube__new-play-btn"></button>
+					</div>
+					<!-- end Video Youtube
+					=========================================================================== -->
+				  </div>
+				
+				
+				<!-- <div class="videoVideo">
+					<iframe width="1110" height="600" src="https://www.youtube.com/embed/Bluxbh9CaQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<button class="videoPlayButton"><img src="images\dest\buttonPlayVideo.svg" alt="запуск видео" /></button>
-				</div>
+				</div> -->
 			</section>
 
 		</article>
 		<article class="projects">
-			<div class="projectsTop">
-				<img src="images\dest\Stickers.jpg" alt="Стикеры" />
-				<img src="images\dest\Leptops.jpg" alt="Ноуты" />
-				<img src="images\dest\Stickers.jpg" alt="Стикеры" />
-				<img src="images\dest\Leptops.jpg" alt="Ноуты" />
-			</div>
-			<div class="projectsbottom">
-				<img src="images\dest\Leptops.jpg" alt="Ноуты" />
-				<img src="images\dest\Stickers.jpg" alt="Стикеры" />
-				<img src="images\dest\Leptops.jpg" alt="Ноуты" />
-				<img src="images\dest\Stickers.jpg" alt="Стикеры" />
-			</div>
-			<div class="viewingImages">
-				<img src="" class="viewingImagesFon" alt="Предпросмотр фон" />
-				<img src="" class="viewingImagesIcon1" alt="Иконка" />
-				<img src="" class="viewingImagesIcon2" alt="Иконка" />
-				<img src="" class="viewingImagesIcon3" alt="Иконка" />
+			<div class="projectsContent">
+				<a href="">
+					<img class="projectsContentImg" src="images\dest\biryuzovyj-gornoe-ozero.jpg" alt="Стикеры" />
+					<div class="projectsContentOverlay">
+						<img class="projectsContentImgHover" src="images\dest\eye.png" alt="Иконка просмотра" />
+					</div>
+				</a>
+				<a href="">
+					<img class="projectsContentImg" src="images\dest\Leptops.jpg" alt="Ноуты" />
+					<div class="projectsContentOverlay">
+						<img class="projectsContentImgHover" src="images\dest\eye.png" alt="Иконка просмотра" />
+					</div>
+				</a>
+				<div class="break break2Img"></div> <!-- разрыв -->
+				<a href="">
+					<img class="projectsContentImg" src="images\dest\Stickers.jpg" alt="Стикеры" />
+					<div class="projectsContentOverlay">
+						<img class="projectsContentImgHover" src="images\dest\eye.png" alt="Иконка просмотра" />
+					</div>
+				</a>
+				<div class="break break3Img"></div> <!-- разрыв -->
+				<a href="">
+					<img class="projectsContentImg" src="images\dest\Leptops.jpg" alt="Ноуты" />
+					<div class="projectsContentOverlay">
+						<img class="projectsContentImgHover" src="images\dest\eye.png" alt="Иконка просмотра" />
+					</div>
+				</a>
+				<div class="break break4Img break2Img"></div> <!-- разрыв -->
+				<div class="break break2Img"></div> <!-- разрыв -->
+				<a href="">
+					<img class="projectsContentImg" src="images\dest\Leptops.jpg" alt="Ноуты" />
+					<div class="projectsContentOverlay">
+						<img class="projectsContentImgHover" src="images\dest\eye.png" alt="Иконка просмотра" />
+					</div>
+				</a>
+				<a href="">
+					<img class="projectsContentImg" src="images\dest\Stickers.jpg" alt="Стикеры" />
+					<div class="projectsContentOverlay">
+						<img class="projectsContentImgHover" src="images\dest\eye.png" alt="Иконка просмотра" />
+					</div>
+				</a>
+				<div class="break break2Img break3Img"></div> <!-- разрыв -->
+				<div class="break break3Img"></div> <!-- разрыв -->
+				<a href="">
+					<img class="projectsContentImg" src="images\dest\Leptops.jpg" alt="Ноуты" />
+					<div class="projectsContentOverlay">
+						<img class="projectsContentImgHover" src="images\dest\eye.png" alt="Иконка просмотра" />
+					</div>
+				</a>
+				<a href="">
+					<img class="projectsContentImg" src="images\dest\Stickers.jpg" alt="Стикеры" />
+					<div class="projectsContentOverlay">
+						<img class="projectsContentImgHover" src="images\dest\eye.png" alt="Иконка просмотра" />
+					</div>
+				</a>
 			</div>
 
 
@@ -165,15 +208,17 @@
 
 		</article>
 		<article class="form">
-			<section class="formTop">
+			<section class="formdDescription">
 				<h2 class="" >Хотите веб-сайт?</h2>
 				<p class="">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
 			</section>
-			<form class="formBottom">
-				<input name="userName" type="text" placeholder="Ваше имя">
-				<input name="email" type="text" placeholder="Ваш e-mail">
-				<textarea name="comment" cols="40" rows="3">Сообщение</textarea>
-				<input name="submit" type="submit" value="ОТПРАВИТЬ">
+			<form class="formForm">
+				<div class="formFormTop">
+					<input name="userName" type="text" placeholder="Ваше имя" required>
+					<input name="email" type="text" placeholder="Ваш e-mail" required>
+				</div>
+				<textarea name="comment" cols="40" rows="7" required>Сообщение</textarea>
+				<input class="formFormSubmit" name="submit" type="submit" value="ОТПРАВИТЬ">
 			</form>
 
 		</article>
@@ -196,7 +241,7 @@
 </body>
 	
 	  <!-- Общий js -->
-<script src="app\JS\app.min.js"></script>
+<script src="JS\app.min.js"></script>
 	
 	
 </html>
