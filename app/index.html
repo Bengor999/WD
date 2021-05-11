@@ -212,10 +212,17 @@
 				<h2 class="" >Хотите веб-сайт?</h2>
 				<p class="">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
 			</section>
-			<form class="formForm">
+			<form novalidate class="formForm">
 				<div class="formFormTop">
-					<input name="userName" type="text" placeholder="Ваше имя" required>
-					<input name="email" type="text" placeholder="Ваш e-mail" required>
+					<div class="formFormTopLeft">
+						<input name="userName" id="Uname" type="text" placeholder="Ваше имя" required>
+						<span class="errorUserName" aria-live="polite"></span>
+					</div>
+					<div class="formFormTopRight">
+						<input name="email" id="mail" type="email" placeholder="Ваш e-mail" required>
+
+						<span class="errorEmail" aria-live="polite"></span>
+					</div>
 				</div>
 				<textarea name="comment" cols="40" rows="7" required>Сообщение</textarea>
 				<input class="formFormSubmit" name="submit" type="submit" value="ОТПРАВИТЬ">

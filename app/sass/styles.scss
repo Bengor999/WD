@@ -679,12 +679,20 @@ A:active {
     margin: 0 0 0 0;
     // background-color: rgb(25, 153, 83);
 }
-.formFormTop input {
-    box-sizing: border-box;
-    padding: 0 0 0 20px;
+.formFormTopLeft, .formFormTopRight {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     width: 255px;
-    height: 50px;
+    min-height: 50px;
+    // background-color: #900;
 }
+// .formFormTop input {
+//     box-sizing: border-box;
+//     padding: 0 0 0 20px;
+//     width: 255px;
+//     height: 50px;
+// }
 .formForm textarea {
     box-sizing: border-box;
 
@@ -706,6 +714,54 @@ A:active {
     color: white;
 
 }
+//CSS для валидации форм
+#Uname, #mail {
+    -webkit-appearance: none;
+  
+    width: 255px;
+    height: 50px;
+    border: 1px solid #333;
+    margin: 0;
+  
+    // font-family: inherit;
+    // font-size: 90%;
+  
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  /* Наш стиль для невалидных полей */
+  input:invalid{
+    border-color: rgb(223, 93, 102);
+    background-color: rgb(233, 195, 201);
+  }
+  
+  input:focus:invalid {
+    outline: none;
+  }
+  
+  /* Это стиль для сообщений об ошибке */
+  .errorEmail, .errorUserName {
+    position: absolute;
+    top: 100%;
+    // width  : 100%;
+    padding: 0;
+  
+    // font-size: 80%;
+    color: white;
+    background-color: rgb(37, 14, 117);
+    border-radius: 0 0 5px 5px;
+  
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .errorEmail.active, .errorUserName.active {
+    padding: 0.3em;
+  }
+
+
+
 
 
 //footer
