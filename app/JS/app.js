@@ -106,3 +106,15 @@ email.addEventListener("input", function (event) {
      event.preventDefault();
    }
  }, false);
+
+
+
+//  Бургер меню
+
+$(document).ready(function() {
+  $('.menu-burger__header').click(function() {
+      $('.menu-burger__header').toggleClass('open-menu');
+      $('.firstScreen_nav_right').toggleClass('open-menu');
+      $('body').toggleClass('fixed-page');
+  });
+});

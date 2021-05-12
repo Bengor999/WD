@@ -7,6 +7,7 @@
 	<title>Document</title>
  
 	<!-- Подключаем стили проекта -->
+	<!-- <link rel="stylesheet" href="css/libs.min.css"/> -->
 	<link rel="stylesheet" href="css/app.min.css">
  
 </head>
@@ -18,13 +19,18 @@
 				<aside class="firstScreenNavWD">
 					<img class="WD" src="images\dest\WD.png" alt="Логотип WD"/>
 				</aside>
-				<aside class="firstScreenNavMenu">
-					<a href="" class="" >ГЛАВНАЯ</a>
-					<a href="" class="" >ОБ АВТОРЕ</a>
-					<a href="" class="" >РАБОТЫ</a>
-					<a href="" class="" >ПРОЦЕСС</a>
-					<a href="" class="" >КОНТАКТЫ</a>
-				</aside>
+				<div class="menu-burger__header">
+					<span></span>
+				</div>
+				<div class="firstScreen_nav_right">
+					<aside class="firstScreenNavMenu">
+						<a href="" class="" >ГЛАВНАЯ</a>
+						<a href="" class="" >ОБ АВТОРЕ</a>
+						<a href="" class="" >РАБОТЫ</a>
+						<a href="" class="" >ПРОЦЕСС</a>
+						<a href="" class="" >КОНТАКТЫ</a>
+					</aside>
+				</div>
 			</nav>
 			<div class="firstScreenContent">
 				<div class="firstScreenContentLeft">
@@ -152,22 +158,22 @@
 						<img class="projectsContentImgHover" src="images\dest\eye.png" alt="Иконка просмотра" />
 					</div>
 				</a>
-				<div class="break break2Img"></div> <!-- разрыв -->
+				<!-- <div class="break break2Img"></div> разрыв -->
 				<a href="">
 					<img class="projectsContentImg" src="images\dest\Stickers.jpg" alt="Стикеры" />
 					<div class="projectsContentOverlay">
 						<img class="projectsContentImgHover" src="images\dest\eye.png" alt="Иконка просмотра" />
 					</div>
 				</a>
-				<div class="break break3Img"></div> <!-- разрыв -->
+				<!-- <div class="break break3Img"></div> разрыв -->
 				<a href="">
 					<img class="projectsContentImg" src="images\dest\Leptops.jpg" alt="Ноуты" />
 					<div class="projectsContentOverlay">
 						<img class="projectsContentImgHover" src="images\dest\eye.png" alt="Иконка просмотра" />
 					</div>
 				</a>
-				<div class="break break4Img break2Img"></div> <!-- разрыв -->
-				<div class="break break2Img"></div> <!-- разрыв -->
+				<!-- <div class="break break4Img break2Img"></div> разрыв -->
+				<!-- <div class="break break2Img"></div> разрыв -->
 				<a href="">
 					<img class="projectsContentImg" src="images\dest\Leptops.jpg" alt="Ноуты" />
 					<div class="projectsContentOverlay">
@@ -180,8 +186,8 @@
 						<img class="projectsContentImgHover" src="images\dest\eye.png" alt="Иконка просмотра" />
 					</div>
 				</a>
-				<div class="break break2Img break3Img"></div> <!-- разрыв -->
-				<div class="break break3Img"></div> <!-- разрыв -->
+				<!-- <div class="break break2Img break3Img"></div> разрыв -->
+				<!-- <div class="break break3Img"></div> разрыв -->
 				<a href="">
 					<img class="projectsContentImg" src="images\dest\Leptops.jpg" alt="Ноуты" />
 					<div class="projectsContentOverlay">
@@ -225,7 +231,7 @@
 					</div>
 				</div>
 				<textarea name="comment" cols="40" rows="7" required>Сообщение</textarea>
-				<input class="formFormSubmit" name="submit" type="submit" value="ОТПРАВИТЬ">
+				<input class="formFormSubmit" name="submit" type="submit" value="ОТПРАВИТЬ" cursor-po>
 			</form>
 
 		</article>
@@ -236,9 +242,9 @@
 					<p class="">(с) 2018. Все права защищены.</p>
 				</div>
 				<div class="footerContentRigch">
-					<a class=""><img src="images\dest\VK.svg" alt="Соцсети" /></a>
-					<a class=""><img src="images\dest\VK.svg" alt="Соцсети" /></a>
-					<a class=""><img src="images\dest\VK.svg" alt="Соцсети" /></a>
+					<a href="" class=""><img src="images\dest\VK.svg" alt="Соцсети" /></a>
+					<a href="" class=""><img src="images\dest\VK.svg" alt="Соцсети" /></a>
+					<a href="" class=""><img src="images\dest\VK.svg" alt="Соцсети" /></a>
 					<!-- <a class=""><img src="images\dest\Klients.png" alt="Соцсети" /></a> -->
 
 				</div>
@@ -248,7 +254,8 @@
 </body>
 	
 	  <!-- Общий js -->
-<script src="JS\app.min.js"></script>
+	  <!-- <script src="JS\libs.min.js"></script> -->
+	  <script src="JS\app.min.js"></script>
 	
 	
 </html>

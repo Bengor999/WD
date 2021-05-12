@@ -31,6 +31,13 @@
      
     // Подключаем модуль del
     const del = require('del');
+
+    //Вставка файлов с кодом в код (JS)
+    // var fileinclude  = require('gulp-file-include');
+
+
+
+
      
     // Определяем логику работы Browsersync
     function browsersync() {
