@@ -1,15 +1,24 @@
+
+
+
+/* Для нового проекта
+@import '_reset'
+*/
+
+
+
+
+
+// Глобал
 :root {
     --color-greyBlue: #34547A;
 }
-
-
 body {
 font-family: 'Roboto', Arial, sans-serif ;
 margin: 0 0 0 0;
 padding: 0 0 0 0 ;
 border: 0 0 0 0 ;
 }
-
 .base {
     font-family: 'Roboto', Arial, sans-serif;
     margin:0 auto;
@@ -31,6 +40,7 @@ A:active {
     color: #000000; /* Цвет активных ссылок */
 }
 
+
 // first-screen
 
 
@@ -42,35 +52,20 @@ A:active {
     max-width: 1920px;
     width: 100%;
     min-height: 700px;
-    // background-color: #10b410;
 }
 .firstScreenNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // justify-self: flex-start;
-    // align-self: flex-start;
     max-width: 1120px;
     width: 100%;
     margin: 0 0 0 0 ;
-    // background-color: lawngreen;
 }
 .firstScreenNavWD img {
     display: flex;
     width: 90px;
     height: 44px;
     margin: 57px 0 ;
-    // font-family: 'Revalia';
-    // font-size: 48px;
-    // font-style: normal;
-    // font-weight: 400;
-    // line-height: 60px;
-    // letter-spacing: 0em;
-    // text-align: center;
-    // color: var(--color-greyBlue);
-    // background-color: lightcoral;
-
-
 }
 .firstScreen_nav_right {
     display: flex;
@@ -176,7 +171,6 @@ A:active {
     max-width: 1920px;
     width: 100%;
     min-height: 366px;
-    // background-color: #515758;
 }
 .aboutMeContent {
     display: flex;
@@ -186,7 +180,6 @@ A:active {
     max-width: 540px;
     width: 100%;
     min-height: 166px;
-    // background-color: aqua;
 }
 .aboutMeContent h2 {
     font-size: 32px;
@@ -210,6 +203,7 @@ A:active {
 
 // numbers
 
+
 .numbers {
     display: flex;
     justify-content: center;
@@ -224,22 +218,18 @@ A:active {
     justify-content: space-between;
     max-width: 1120px;
     width: 100%;
-    // background-color: #515758;
 }
 .numbersContentAll {
     display: flex;
-    // justify-content: space-between;
     max-width: 180px;
     width: 100%;
     height: 55px;
-    // background-color: gold;
     cursor: pointer;
 
 }
 .numbersContentAll img{
     width: 55px;
     height: 55px;
-    // background-color: gray;
     margin:  0 20px 0 0;
 }
 .numbersContentAll h3 {
@@ -250,7 +240,6 @@ A:active {
     letter-spacing: 0em;
     text-align: left;
     color: white;
-    // background-color: green;
     margin: 3px 0 0 0 ;
 }
 .numbersContentAll p {
@@ -261,7 +250,6 @@ A:active {
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
-    // background-color: hotpink;
     margin: 0 0 0 0 ;
 }
 
@@ -276,7 +264,6 @@ A:active {
     max-width: 1920px;
     width: 100%;
     min-height: 653px;
-    // background-color: green;
 }
 .skillsContent {
     display: flex;
@@ -285,7 +272,6 @@ A:active {
     max-width: 1120px;
     width: 100%;
     min-height: 450px;
-    // background-color: rgb(93, 199, 79);
 }
 .skillsContent img {
     height: 450px;
@@ -299,7 +285,6 @@ A:active {
     max-width: 1120px;
     width: 100%;
     min-height: 450px;
-    // background-color: blue;
 }
 .skillsContentLeft h2 {
     font-size: 32px;
@@ -308,7 +293,6 @@ A:active {
     line-height: 38px;
     letter-spacing: 0em;
     text-align: left;
-
 }
 .skillsContentLeft p {
     font-size: 16px;
@@ -370,7 +354,6 @@ A:active {
     width: 100%;
     min-height: 1004px;
     background-color: #eeeff1;
-
 }
 .videoDescription {
     display: flex;
@@ -380,7 +363,6 @@ A:active {
     max-width: 1110px;
     width: 100%;
     min-height: 804px;
-    // background-color: green;
 }
 .videoDescription h2 {
     font-size: 32px;
@@ -390,7 +372,6 @@ A:active {
     letter-spacing: 0em;
     text-align: center;
     margin: 0 0 0 0;
-    // background-color: rgb(53, 36, 146);
 }
 .videoDescription p {
     max-width: 540px;
@@ -401,7 +382,6 @@ A:active {
     line-height: 26px;
     letter-spacing: 0em;
     text-align: center;
-    // background-color: rgb(197, 171, 22);
 }
 
 
@@ -424,18 +404,14 @@ A:active {
    * ------------------------------------------------------------------------- */
   .video-youtube {
     box-sizing: border-box;
-
     position: relative;
     padding-bottom: 55.0%;
-    // padding-top: 25px;
-    // padding: 0;
     margin: 0;
     border: 0;
     height: 0;
     &.video-youtube_overlay {
       &:before {
         box-sizing: border-box;
-
         content: '';
         position: absolute;
         left: 0;
@@ -449,10 +425,8 @@ A:active {
         z-index: 5;
       }
     }
-  
     .video-youtube__content {
-        box-sizing: border-box;
-
+      box-sizing: border-box;
       position: absolute;
       top: 0;
       left: 0;
@@ -469,11 +443,7 @@ A:active {
       }
     }
     .video-youtube__new-play-btn {
-        box-sizing: border-box;
-    //   max-width: 1110px;
-    //   max-height: 600px;
-    // width: 1110px;
-    // height: 600px;
+      box-sizing: border-box;
       width: 100%;
       height: 100%;
       border: none;
@@ -496,7 +466,6 @@ A:active {
   
 .videoVideo {
     position: relative;
-    // background-color: rgb(137, 167, 196);
 }
 .videoPlayButton {
     height: 100px;
@@ -505,7 +474,6 @@ A:active {
     color: #fff;
     position: absolute;
     background-color: rgba(216, 122, 15, 0%);
-    // overflow: auto;
     margin: auto;
     border: 0;
     padding: 0;
@@ -523,8 +491,6 @@ A:active {
 .projects {
     display: flex;
     max-width: 1920px;
-    // min-height: 960px;
-    // background-color: #eeeff1;
     margin: 0 0 0 0;
     padding: 0;
     border: 0;
@@ -537,7 +503,6 @@ A:active {
     margin: 0 0 0 0;
     padding: 0;
     border: 0;
-    // background-color: blue;
 }
 .projectsContent a {
 
@@ -549,7 +514,6 @@ A:active {
     margin: 0 0 0 0;
     padding: 0;
     border: 0;
-    // background-color: indigo;
 
 }
 .projectsContentImg {
@@ -561,11 +525,7 @@ A:active {
     margin: 0 0 0 0;
     padding: 0;
     border: 0;
-    // background-color: lawngreen;
     object-fit: cover;
-
-
-    // object-fit:cover;
 }
 .projectsContentOverlay {
     display: none;
@@ -607,9 +567,7 @@ A:active {
     max-width: 1920px;
     width: 100%;
     min-height: 292px;
-    // background-color: #d439a1;
     margin: 0 0 0 0;
-
 }
 .clientsContent {
     display: flex;
@@ -617,9 +575,7 @@ A:active {
     align-items: center;
     max-width: 1120px;
     width: 100%;
-    // background-color: #38c433;
     margin: 0 0 0 0;
-
 }
 .clientsContent img {
     width: 255px;
@@ -651,7 +607,6 @@ A:active {
     max-width: 540px;
     min-height: 150px;
     margin: 100px 0 0 0;
-    // background-color: blueviolet;
 }
 .formdDescription h2 {
     font-size: 32px;
@@ -661,8 +616,6 @@ A:active {
     letter-spacing: 0em;
     text-align: center;
     margin: 0;
-    // background-color: chocolate;
-
 }
 .formdDescription p {
     font-size: 16px;
@@ -672,7 +625,6 @@ A:active {
     letter-spacing: 0em;
     text-align: center;
     margin: 0;
-    // background-color: crimson;
 }
 .formForm {
     display: flex;
@@ -682,7 +634,6 @@ A:active {
     max-width: 540px;
     min-height: 350px;
     margin: 65px 0 100px 0;
-    // background-color: blueviolet;
 }
 .formFormTop {
     display: flex;
@@ -691,7 +642,6 @@ A:active {
     align-items: center;
     width: 540px;
     margin: 0 0 0 0;
-    // background-color: rgb(25, 153, 83);
 }
 .formFormTopLeft, .formFormTopRight {
     display: flex;
@@ -699,14 +649,7 @@ A:active {
     position: relative;
     width: 255px;
     min-height: 50px;
-    // background-color: #900;
 }
-// .formFormTop input {
-//     box-sizing: border-box;
-//     padding: 0 0 0 20px;
-//     width: 255px;
-//     height: 50px;
-// }
 .formForm textarea {
     box-sizing: border-box;
 
@@ -718,15 +661,10 @@ A:active {
 //CSS для валидации форм
 #Uname, #mail {
     -webkit-appearance: none;
-  
     width: 255px;
     height: 50px;
     border: 1px solid #333;
     margin: 0;
-  
-    // font-family: inherit;
-    // font-size: 90%;
-  
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
@@ -734,9 +672,6 @@ A:active {
   /* Наш стиль для невалидных полей */
   .formFormTop input:invalid{
     outline: none;
-
-    // border-color: rgb(223, 93, 102);
-    // background-color: rgb(233, 195, 201);
   }
   
   .formFormTop input:focus:invalid {
@@ -752,14 +687,10 @@ A:active {
   .errorEmail, .errorUserName {
     position: absolute;
     top: 100%;
-    // width  : 100%;
     padding: 0;
-  
-    // font-size: 80%;
     color: white;
     background-color: rgb(37, 14, 117);
     border-radius: 0 0 5px 5px;
-  
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
@@ -779,8 +710,6 @@ A:active {
     text-align: center;
     color: white;
     cursor: pointer;
-
-
 }
 
 
@@ -811,20 +740,17 @@ A:active {
     justify-content: space-between;
     max-width: 300px;
     min-height: 51px;
-    // background-color: hotpink;
 }
 .footerContentLeft h3 {
-font-size: 21px;
-font-style: normal;
-font-weight: 500;
-line-height: 25px;
-letter-spacing: 0em;
-text-align: left;
-margin: 0;
-padding: 0;
-color: #fff;
-// background-color: green;
-
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: #fff;
 }
 .footerContentLeft p {
     font-size: 13px;
@@ -836,7 +762,6 @@ color: #fff;
     margin: 0;
     padding: 0;
     color: #fff;
-    // background-color: gold;
 }
 .footerContentRigch {
     display: flex;
@@ -845,317 +770,10 @@ color: #fff;
     height: 23px;
     max-width: 180px;
     width: 100%;
-    // background-color: indigo;
-    // margin: 0;
-    // padding: 0;
 }
 .footerContentRigch img {
     height: 23px;
     width: auto;
-    // background-color: hotpink;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-@media(max-width: 1249px){
-
-    .firstScreenNavWD img {
-        margin: 20px 0 20px 20px ;
-    }
-    .firstScreen_nav_right {
-        margin: 0 20px 0 20px;
-    }
-    .firstScreenNavMenu a {
-        margin: 0;
-        padding: 0;
-    }
-    .numbersContent {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .numbersContentAll {
-        margin: 20px 0;
-    }
-    .skillsContent {
-        flex-direction: column;
-    }
-    .skillsContentLeft {
-        align-items: center;
-    }
-    .projectsContent a {
-
-        width: 32.5vw;
-        height: 32.5vw;
-    }
-    .projectsContentImg {
-        width: 32.5vw;
-        height: 32.5vw;
-    }
-    .projectsContentImgHover{
-        width: 50px;
-        height: 29px;
-      }
-    .clientsContent {
-        display: flex;
-        flex-wrap: wrap;
-        // flex-direction: column;
-        justify-content: center;
-        margin: 20px ;
-    
-    }
-
-    .footer {
-        min-height: 80px;
-    }
-    .footerContentLeft {
-        margin: 0  0 0 20px;
-    }
-    .footerContentRigch {
-        margin: 0 20px 0 0;
-    }
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width: 767px){
-    .firstScreen {
-        min-height: 200px;
-    }
-    .menu-burger__header {
-        position: relative; /* задаем относительное позиционирование */
-        width: 40px; /* определяем размеры блока */
-        height: 35px;
-        display: block;
-        margin-right: 20px;
-    }
-    // Рисуем бургер
-    .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
-        height: 3px;
-        width: 100%;
-        position: absolute;
-        background: #515758;
-        margin: 0 auto;
-        z-index: 3;
-    }
-    .menu-burger__header span{
-        top: 16px;
-    }
-    .menu-burger__header:after, .menu-burger__header:before{
-        content: '';
-    }
-    .menu-burger__header:after{
-        bottom: 5px;
-    }
-    .menu-burger__header:before{
-        top: 5px;
-    }
-    .firstScreen_nav_right {
-        
-            display: block;
-            position: absolute;
-            top: 105px;
-            left: 0;
-            // background: rgb(245, 246, 246);
-            // box-shadow: #ccc;
-            width: 100%;
-            // box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
-            left: -200%;
-            transition: all 0.4s ease;
-            background-color: var(--color-greyBlue);
-
-        
-    }
-    .firstScreen_nav_right.open-menu {
-        left: 0;   
-        margin: 0;
-    }
-
-    .firstScreenNavMenu {
-        display: block;
-            overflow:auto ; /*для того, чтобы меню скроллилось в случае, если оно не влезает на экран*/
-
-
-    }
-    .firstScreenNavMenu a {
-        display: block;
-        margin: 40px 0px 40px 33px;
-        font-size: 14px;
-        color: #fff;
-
-    
-    }
-
-
-    // После клика по иконке делаем крестик
-    .menu-burger__header.open-menu span {
-        opacity:0; 
-        transition: 0.5s; 
-    }
-    .menu-burger__header.open-menu:before {
-        transform: rotate(38deg);
-        top: 16px;
-        transition: 0.4s;
-
-    }
-    .menu-burger__header.open-menu:after {
-        transform: rotate(-38deg);
-        bottom: 16px;
-        transition: 0.4s;
-
-    }
-//Блокируем прокрутку страницы под меню
-    .fixed-page{
-        overflow: hidden; /*запрещаем прокручивание страницы при открытом меню*/
-    }
-    .firstScreenContent {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        // justify-self: flex-end;
-        // align-self: flex-end;
-        // max-width: 1120px;
-        // width: 100%;
-        // margin: 0 0 140px 0 ;
-        // background-color: rgb(150, 41, 101);
-    }
-    .firstScreenContentRight {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-        align-items: center;
-        max-width: 540px;
-        width: 100%;
-        margin: 20px 20px 20px 20px;
-    }
-    .firstScreenContentRight main {
-        // font-size: 16px;
-        // font-style: normal;
-        // font-weight: 400;
-        // line-height: 26px;
-        // letter-spacing: 0em;
-        text-align: center;
-
-    
-        margin: 20px 0;
-    
-    }
-    .video {
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // max-width: 1920px;
-        // width: 100%;
-        min-height: 704px;
-        // background-color: #eeeff1;
-    
-    }
-    
-    .videoDescription {
-        min-height: 500px;
-    }
-    .projectsContent a {
-
-        // position: relative;
-        // max-width: 480px;
-        // max-height: 480px;
-        width: 48vw;
-        height: 48vw;
-        // margin: 0 0 0 0;
-        // padding: 0;
-        // border: 0;
-        // background-color: indigo;
-    }
-    .projectsContentImg {
-        // display: block;
-        // max-width: 480px;
-        // max-height: 480px;
-        width: 48vw;
-        height: 48vw;
-        // margin: 0 0 0 0;
-        // padding: 0;
-        // border: 0;
-        // background-color: lawngreen;
-        // object-fit: cover;
-    
-        // object-fit:cover;
-    }
-    .formForm {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-        // align-items: center;
-        // max-width: 540px;
-        min-height: 450px;
-        // margin: 65px 0 100px 0;
-        // background-color: blueviolet;
-    }
-    
-
-    .formFormTop {
-        // display: flex;
-        flex-direction: column;
-        // justify-content: space-between;
-        // align-items: center;
-        // width: 540px;
-        // margin: 20px 0 20px 0;
-        // background-color: rgb(25, 153, 83);
-    }
-    .formFormTopLeft, .formFormTopRight {
-        margin: 15px 0;
-        // display: flex;
-        // flex-direction: column;
-        // position: relative;
-        // width: 255px;
-        // min-height: 50px;
-        // background-color: #900;
-    }
-    .formForm textarea {
-        // box-sizing: border-box;
-    
-        padding: 20px ;
-        resize: none;
-        width: 90vw;
-        height: auto;
-    }
-    
-    
-        
-
-
-
-
-
-
-
-
-
-}
