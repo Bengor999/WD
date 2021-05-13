@@ -5,9 +5,11 @@
 
 function onYouTubePlayerAPIReady() {
   var playerYoutube;
-  
+  var viddd = document.getElementById ('video-youtube__content');
+  var vid = viddd.dataset.video;
+
   playerYoutube = new YT.Player("video-youtube__content", {
-    videoId: "zl3I5CSuNjE",
+    videoId: vid,
     playerVars: {
       // 'controls': 0,
       // 'showinfo': 0,
@@ -56,37 +58,17 @@ var email = document.getElementById('mail');
 var errorEmail = document.querySelector('.errorEmail');
 var userName = document.getElementById('Uname');
 var errorUserName = document.querySelector('.errorUserName');
+const EMAIL_REGEXP = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/iu;
 
-
-userName.addEventListener("input", function (event) {
- // Каждый раз, когда пользователь вводит что-либо, мы проверяем,
-  // является ли корректным поле электронной почты.
-  if (userName.validity.valid) {
-    // В случае появления сообщения об ошибке, если поле
-    // является корректным, мы удаляем сообщение об ошибке.
-    errorUserName.innerHTML = ""; // Сбросить содержимое сообщения
-    errorUserName.className = "errorUserName"; // Сбросить визуальное состояние сообщения
+function validateEmail(value) {
+  return EMAIL_REGEXP.test(value);
   }
-}, false);
-form.addEventListener("submit", function (event) {
-  // Каждый раз, когда пользователь пытается отправить данные, мы проверяем
-   // валидность поля электронной почты.
-  if (!userName.validity.valid) {
-
-    // Если поле невалидно, отображается пользовательское
-    // сообщение об ошибке.
-    errorUserName.innerHTML = "Исправь ошибку, будь котиком!";
-    errorUserName.className = "errorUserName active";
-    // И мы предотвращаем отправку формы путём отмены события
-    event.preventDefault();
-  }
-}, false);
 
 
 email.addEventListener("input", function (event) {
   // Каждый раз, когда пользователь вводит что-либо, мы проверяем,
    // является ли корректным поле электронной почты.
-   if (email.validity.valid) {
+   if (validateEmail(email.value)) {
      // В случае появления сообщения об ошибке, если поле
      // является корректным, мы удаляем сообщение об ошибке.
      errorEmail.innerHTML = ""; // Сбросить содержимое сообщения
@@ -96,17 +78,52 @@ email.addEventListener("input", function (event) {
  form.addEventListener("submit", function (event) {
    // Каждый раз, когда пользователь пытается отправить данные, мы проверяем
     // валидность поля электронной почты.
-   if (!email.validity.valid) {
+   if (!userName.validity.valid) { 
+    // Если поле невалидно, отображается пользовательское
+    // сообщение об ошибке.
+    errorUserName.innerHTML = "Заполни пустоту, будь котиком!";
+    errorUserName.className = "errorUserName active";
+    // И мы предотвращаем отправку формы путём отмены события
+    event.preventDefault();
+   }
+  //  else if (!validateEmail(email.value)) {
  
-     // Если поле невалидно, отображается пользовательское
-     // сообщение об ошибке.
-     errorEmail.innerHTML = "Исправь ошибку, будь котиком!";
-     errorEmail.className = "errorEmail active";
-     // И мы предотвращаем отправку формы путём отмены события
-     event.preventDefault();
+  //   // Если поле невалидно, отображается пользовательское
+  //   // сообщение об ошибке.
+  //   errorEmail.innerHTML = "в Email надо @  и точку";
+  //   errorEmail.className = "errorEmail active";
+  //   // И мы предотвращаем отправку формы путём отмены события
+  //   event.preventDefault();
+  // }
+   
+ }, false);
+
+ userName.addEventListener("input", function (event) {
+  // Каждый раз, когда пользователь вводит что-либо, мы проверяем,
+   // является ли корректным поле электронной почты.
+   if (userName.validity.valid) {
+     // В случае появления сообщения об ошибке, если поле
+     // является корректным, мы удаляем сообщение об ошибке.
+     errorUserName.innerHTML = ""; // Сбросить содержимое сообщения
+     errorUserName.className = "errorUserName"; // Сбросить визуальное состояние сообщения
    }
  }, false);
 
+ form.addEventListener("submit", function (event) {
+   // Каждый раз, когда пользователь пытается отправить данные, мы проверяем
+    // валидность поля электронной почты.
+   if (!validateEmail(email.value)) {
+ 
+    // Если поле невалидно, отображается пользовательское
+    // сообщение об ошибке.
+    errorEmail.innerHTML = "в Email надо @  и точку";
+    errorEmail.className = "errorEmail active";
+    // И мы предотвращаем отправку формы путём отмены события
+    event.preventDefault();
+   }
+ }, false);
+ 
+ 
 
 
 //  Бургер меню

@@ -162,6 +162,7 @@ A:active {
     line-height: 26px;
     letter-spacing: 0.1em;
     text-align: center;
+    cursor: pointer;
 }
 
 
@@ -232,6 +233,8 @@ A:active {
     width: 100%;
     height: 55px;
     // background-color: gold;
+    cursor: pointer;
+
 }
 .numbersContentAll img{
     width: 55px;
@@ -547,6 +550,7 @@ A:active {
     padding: 0;
     border: 0;
     // background-color: indigo;
+
 }
 .projectsContentImg {
     display: block;
@@ -559,6 +563,7 @@ A:active {
     border: 0;
     // background-color: lawngreen;
     object-fit: cover;
+
 
     // object-fit:cover;
 }
@@ -620,6 +625,8 @@ A:active {
     width: 255px;
     height: 120px;
     margin: 0 0 0 0;
+    cursor: pointer;
+
 
 }
 
@@ -708,19 +715,6 @@ A:active {
     width: 540px;
     height: 175px;
 }
-.formFormSubmit {
-    height: 55px;
-    width: 190px;
-    background-color: var(--color-greyBlue);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0.15em;
-    text-align: center;
-    color: white;
-
-}
 //CSS для валидации форм
 #Uname, #mail {
     -webkit-appearance: none;
@@ -738,15 +732,22 @@ A:active {
   }
   
   /* Наш стиль для невалидных полей */
-  input:invalid{
+  .formFormTop input:invalid{
+    outline: none;
+
+    // border-color: rgb(223, 93, 102);
+    // background-color: rgb(233, 195, 201);
+  }
+  
+  .formFormTop input:focus:invalid {
     border-color: rgb(223, 93, 102);
     background-color: rgb(233, 195, 201);
+
   }
-  
-  input:focus:invalid {
-    outline: none;
+  .formFormTop input:valid{
+    border-color: rgb(117, 93, 223);
+    background-color: rgb(110, 236, 99);
   }
-  
   /* Это стиль для сообщений об ошибке */
   .errorEmail, .errorUserName {
     position: absolute;
@@ -766,6 +767,21 @@ A:active {
   .errorEmail.active, .errorUserName.active {
     padding: 0.3em;
   }
+  .formFormSubmit {
+    height: 55px;
+    width: 190px;
+    background-color: var(--color-greyBlue);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+
+}
 
 
 
